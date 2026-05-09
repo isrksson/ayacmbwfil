@@ -14,9 +14,39 @@ body {
   margin: 0 auto;
 }
 
-.h1 {
+h1 {
   font-size: 22px;
   font-weight: 500;
   color: #111827;
   margin-bottom: 25rem;
+}
+
+.sub{
+  font-size: 14px;
+  color: #394766;
+  margin-bottom: 1.5rem;
+}
+
+.card{
+  background: white;
+  border: 0.5px solid #394766;
+  border-radius: 5;
+  padding: 1.25rem;
+  margin-bottom: .75rem;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  cursor: pointer;
+  transition: background .15s
+}
+
+.card:hover{
+  background: rgb(231, 233, 236);
+}
+
+.q{
+  font-size:15px;
+  color:#111827;
+  font-weight: 500;
+  margin-bottom: .75rem;
 }
