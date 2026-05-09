@@ -56,12 +56,11 @@ h1 {
   color:#111827;
   font-weight: 500;
   margin-bottom: .75rem;
+  line-height: 1.5;
 }
 
 .opt{
-  display:flex;
-  align-items:center;
-  gap:10px;
+  display:block;
   padding:8px 10px;
   border-radius:8px;
   cursor:pointer;
