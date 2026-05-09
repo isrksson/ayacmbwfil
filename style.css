@@ -18,7 +18,7 @@ h1 {
   font-size: 22px;
   font-weight: 500;
   color: #111827;
-  margin-bottom: 25rem;
+  margin-bottom: .25rem;
 }
 
 .sub{
@@ -30,7 +30,7 @@ h1 {
 .card{
   background: white;
   border: 0.5px solid #394766;
-  border-radius: 5;
+  border-radius: 12px;
   padding: 1.25rem;
   margin-bottom: .75rem;
   display: flex;
@@ -38,6 +38,13 @@ h1 {
   gap: 14px;
   cursor: pointer;
   transition: background .15s
+}
+.card input[type=checkbox]{
+  width:17px;
+  height:17px;
+  flex-shrink:0;
+  cursor:pointer;
+  accent-color:#7F77DD
 }
 
 .card:hover{
@@ -48,5 +55,53 @@ h1 {
   font-size:15px;
   color:#111827;
   font-weight: 500;
+  margin-bottom: .75rem;
+}
+
+.submit-btn{
+  width:100%;
+  padding: 12px;
+  font-size:15px;
+  font-weight: 500;
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  cursor: pointer;
+  margin-top: .5rem;
+  transition: background.15s;
+}
+
+.submit-btn:hover{
+  background: #f0f0f0;
+}
+
+.result-box{
+  display: none;
+  margin-top: 1.5rem;
+  background: #f0f0f0;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 1.5rem; text-align: center;
+}
+
+.result-name{
+  font-size: 28px;
+  font-weight: 500;
+  margin-bottom: .5rem;
+}
+
+.result-desc{
+  font-size: 14px;
+  color: #444;
+  line-height: 1.7;
+}
+
+.badge{
+  display:inline-block;
+  font-size:12px;
+  padding:4px 12px;
+  border-radius: 8px;
+  background: white;
+  color:#343d89;
   margin-bottom: .75rem;
 }

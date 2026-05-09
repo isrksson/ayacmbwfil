@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, intial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <title>Mafia Boss Love Quiz</title>
   </head>
   <body>
     <div class="wrap">
@@ -9,27 +12,19 @@
       <p class="sub">Answer honestly!</p>
 
       <div id="quiz">
-        <div class="card">
-            <input type="checkbox" id="q0">
-            <span class="q">Question 1</span>
-        </div>
-        <div class="card">
-            <input type="checkbox" id="q0">
-            <span class="q">Question 2</span>
-        </div>
-        <div class="card">
-            <input type="checkbox" id="q0">
-            <span class="q">Question 3</span>
-        </div>
+        <label class="card"><input type="checkbox" id="q0"><span class="q"></span></label>
+        <label class="card"><input type="checkbox" id="q0"><span class="q"></span></label>
+        <label class="card"><input type="checkbox" id="q0"><span class="q"></span></label>
+      </div>
 
-        <button class="submit-btn">Submit for Results!</button>
+      <button class="submit-btn">Submit for Results!</button>
 
-        <div class="result-box" id="result">
-          <div class="Badge" id="result-badge">RESULT</div>
-          <p class="result-name" id="result-name"></p>
-          <p class="result-desc" id="result-desc"></p>
-        </div>
+      <div class="result-box" id="result">
+        <div class="Badge" id="result-badge">RESULT</div>
+        <p class="result-name" id="result-name"></p>
+        <p class="result-desc" id="result-desc"></p>
       </div>
     </div>
+    <script src="quiz.js"></script>
   </body>
 </html>
