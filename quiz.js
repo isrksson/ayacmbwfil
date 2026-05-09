@@ -6,16 +6,25 @@ const result = {
   },
   hongjoong: {
     name: "Hongjoong",
-    badge: "",
+    badge: "Old Man",
     desc: "You are Kim Hongjoong. How tf do you not have a bf yet?? Go get him."
   }
 };
 
 function showResult() {
-  const pattern = [0,1,2,3,4,5,6,7,8,9].map(i => document.getElementById('q'+i).checked ? 'T' : 'F').join('');
+  const totalQuestions = 7;
+  let allSeonghwaAnswers = true;
 
-  const isSeonghwa = pattern == "FFFFFFFFTT";
-  const r = isSeonghwa ? result.seonghwa : result.hongjoong;
+  for(let i = 0; i < totalQuestions; i++){
+    const selected = document.querySelector('input[name="q${i}"]:checked');
+
+    if (!selected || selected.value !== 'last'){
+      allSeonghwaAnswers = false;
+      break;
+    }
+  }
+
+  const r = allSeonghwaAnswers ? result.seonghwa : result.hongjoong;
   const box = document.getElementById('result');
   document.getElementById('result-name').textContent = r.name;
   document.getElementById('result-badge').textContent = r.badge;

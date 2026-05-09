@@ -12,22 +12,27 @@
       <p class="sub">Answer honestly!</p>
 
       <div id="quiz">
-        <label class="card"><input type="checkbox" id="q0"><span class="q"></span></label>
-        <label class="card"><input type="checkbox" id="q1"><span class="q"></span></label>
-        <label class="card"><input type="checkbox" id="q2"><span class="q"></span></label>
-        <label class="card"><input type="checkbox" id="q3"><span class="q"></span></label>
-        <label class="card"><input type="checkbox" id="q4"><span class="q"></span></label>
-        <label class="card"><input type="checkbox" id="q5"><span class="q"></span></label>
-        <label class="card"><input type="checkbox" id="q6"><span class="q"></span></label>
-        <label class="card"><input type="checkbox" id="q7"><span class="q"></span></label>
-        <label class="card"><input type="checkbox" id="q8"><span class="q"></span></label>
-        <label class="card"><input type="checkbox" id="q9"><span class="q"></span></label>
+        <div class="card">
+          <p class="q">When someone expresses affection and apprectiation, what do you do?:</p>
+          <label class="opt"><input type="radio" name="q0" value="a">Blush, get embarassed, and play dead</label>
+          <label class="opt"><input type="radio" name="q0" value="b">Act like a complete loser, avoid eye contact, and giggle uncontrollably</label>
+          <label class="opt"><input type="radio" name="q0" value="c">Pretend nothing happened and that everything's normal - no one knows how you actually feel abt it</label>
+          <label class="opt"><input type="radio" name="q0" value="last">Deflect</label>
+        </div>
+
+        <div class="card">
+          <p class="q">How do you handle responsibility?:</p>
+          <label class="opt"><input type="radio" name="q1" value="a">I try to shoulder it all because I believe I should be the only one in charge of it </label>
+          <label class="opt"><input type="radio" name="q1" value="b">I shoulder it all because I believe I should be the only one in charge of it so that everyone around me can take it easy </label>
+          <label class="opt"><input type="radio" name="q1" value="last">I try to be open with people and admit when it becomes too much but try to handle it all by myself if I can </label>
+          <label class="opt"><input type="radio" name="q1" value="c">I work myself into the ground and get overwhelmed</label>
+        </div>
       </div>
 
       <button class="submit-btn" onclick="showResult()">Submit for Results!</button>
 
       <div class="result-box" id="result">
-        <div class="badge" id="result-badge">RESULT</div>
+        <div class="badge" id="result-badge"></div>
         <p class="result-name" id="result-name"></p>
         <p class="result-desc" id="result-desc"></p>
       </div>
