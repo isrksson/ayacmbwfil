@@ -12,13 +12,13 @@ const result = {
 };
 
 function showResult() {
-  const totalQuestions = 7;
+  const totalQuestions = 4;
   let allSeonghwaAnswers = true;
 
   for(let i = 0; i < totalQuestions; i++){
-    const selected = document.querySelector('input[name="q${i}"]:checked');
-
-    if (!selected || selected.value !== 'last'){
+    const selected = document.querySelector(`input[name="q${i}"]:checked`);
+    console.log(selected.value)
+    if (!selected || selected.value !== 'sh'){
       allSeonghwaAnswers = false;
       break;
     }
