@@ -12,7 +12,7 @@ const result = {
 };
 
 function showResult() {
-  const totalQuestions = 4;
+  const totalQuestions = 5;
   let allSeonghwaAnswers = true;
 
   for(let i = 0; i < totalQuestions; i++){
