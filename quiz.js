@@ -15,7 +15,7 @@ function showResult() {
   const pattern = [0,1,2,3,4,5,6,7,8,9,10].map(i => document.getElementById('q'+i).checked ? 'T' : 'F').join('');
 
   const isSeonghwa = pattern == "FFFFFFFFTT";
-  const r = isSeonghwa ? results.seonghwa : results.hongjoong;
+  const r = isSeonghwa ? result.seonghwa : result.hongjoong;
   const box = document.getElementById('result');
   document.getElementById('result-name').textContent = r.name;
   document.getElementById('result-badge').textContent = r.badge;
